@@ -16,7 +16,7 @@ public class LoginController {
 
     public LoginController() {
 
-        view.getUserText().textProperty().bindBidirectional(model.usuarioProperty());
+        view.getUserText().textProperty().bindBidirectional(model.userProperty());
         view.getPsswdText().textProperty().bindBidirectional(model.passwordProperty());
 
         view.getAccederButton().setOnAction(this::onAccessAction);
